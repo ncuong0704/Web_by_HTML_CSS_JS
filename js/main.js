@@ -392,13 +392,13 @@ if ($(".contact").length) {
     event.preventDefault(); // Ngăn không cho form submit nếu không hợp lệ
     var isValid = true;
 
-    // Validate Tên doanh nghiệp
-    if ($("#company-contact").val().trim() === "") {
-      $("#company-contact-error").text($("#company-contact").data("error"));
-      isValid = false;
-    } else {
-      $("#company-contact-error").text("");
-    }
+    // // Validate Tên doanh nghiệp
+    // if ($("#company-contact").val().trim() === "") {
+    //   $("#company-contact-error").text($("#company-contact").data("error"));
+    //   isValid = false;
+    // } else {
+    //   $("#company-contact-error").text("");
+    // }
 
     // Validate Người liên hệ
     if ($("#person-contact").val().trim() === "") {
@@ -408,13 +408,13 @@ if ($(".contact").length) {
       $("#person-contact-error").text("");
     }
 
-    // Validate Chức danh
-    if ($("#position-contact").val().trim() === "") {
-      $("#position-contact-error").text($("#position-contact").data("error"));
-      isValid = false;
-    } else {
-      $("#position-contact-error").text("");
-    }
+    // // Validate Chức danh
+    // if ($("#position-contact").val().trim() === "") {
+    //   $("#position-contact-error").text($("#position-contact").data("error"));
+    //   isValid = false;
+    // } else {
+    //   $("#position-contact-error").text("");
+    // }
 
     // Validate Email
     var email = $("#mail-contact").val().trim();
